@@ -1,0 +1,170 @@
+/**
+ * Header Sass
+ */
+
+// Global style 
+body {
+	font-size: $fontSize-text;
+	color: $black-text;
+}
+
+// Carousel
+#carousel-example-generic {
+	margin-bottom:80px;
+}
+
+// Banner
+.main-banner {
+	img {
+		width: 100%;
+		margin-bottom: 86px;
+	}
+}
+
+
+// Section
+section {
+	margin-bottom:72px;
+	
+	p{
+		line-height: 2rem;
+	}
+	
+	.section-title {
+		border-left: 10px solid $orange-dominant;
+		padding-left: 1rem;
+		margin-bottom: 3rem;
+		
+		span {
+			font-size: $fontSize-light;
+		}
+	}
+	
+	.section-readmore {
+		background-color: $orange-dominant;
+		color: white;
+		font-size: $fontSize-normal;
+		margin-top: 3.000rem;
+		padding: 3px 27px 3px 27px;
+	}
+	
+}
+
+// Home > Member
+.home-member-block {
+	margin: 0 auto;
+		
+	.home-member {
+		text-align: center;
+		
+		.home-member-name {
+			font-size: $fontSize-middle;
+		}
+		
+		.home-member-post {
+			font-size: $fontSize-light;
+			color: $grey-member;
+		}
+	}	
+}
+
+// Home > News
+.news{
+	news-title {
+		color: black;
+		font-size: $fontSize-large;
+	}
+}
+
+.news-overlay {
+	background-color: rgba(255, 255, 255, 0.6);
+	height: 50%;
+	position: absolute;
+	bottom: 10%; 
+}
+
+// Conference
+.conference-block {
+	.conference-item-title {
+		color: $orange-dominant;
+		font-size: $fontSize-normal;
+	}
+	
+	.conference-item-date {
+		color: $grey-subtitle;
+		font-size: $fontSize-normal;
+	}
+}
+
+// Article
+.newsletter-block {
+	.newsletter-item-title {
+		font-size: $fontSize-normal;
+		color: $orange-dominant;
+	}
+}
+.article-block {
+	.article-item-title {
+		font-size: $fontSize-normal;
+		margin-bottom: 0rem;
+	}
+	
+	.article-item-url {
+		font-size: $fontSize-text;
+	}
+}
+ 
+// Join us
+.join-form {
+	.necessary:after {
+		text-overflow: ellipsis;	
+	}
+	
+	.subform {
+		background-color: $grey-form;	
+		padding: 3rem 7.25rem 3rem 7.25rem;
+		margin-bottom: 3rem;
+	}
+	
+	button {
+		color: $white-text;
+		font-size: $fontSize-large;
+		background-color: $orange-dominant;
+		padding: 5px 54px 5px 54px;
+	}
+}
+
+// Members
+.organization-block {
+	text-align: center;
+}
+
+.members-block {
+	.subtitle {
+		font-size: $fontSize-large;
+		color: $grey-subtitle;
+	}
+	
+	.member {
+		text-align: center;
+		
+		.member-avatar {
+			margin-bottom: 0.5rem;
+		}
+		
+		.member-name {
+			font-size: $fontSize-normal;
+			margin-bottom: 0rem;
+		}
+		
+		.member-post {
+			font-size: $fontSize-normal;
+			color: $orange-dominant;
+			margin-bottom: 0rem;
+		}
+		
+		.member-org {
+			color: $grey-member;
+		}
+	}
+}
