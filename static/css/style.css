@@ -44,13 +44,13 @@ body {
   margin-bottom: 86px; }
 
 section {
-  margin-bottom: 72px; }
+  margin-bottom: 3rem; }
   section p {
     line-height: 2rem; }
   section .section-title {
     border-left: 10px solid #ec6941;
     padding-left: 1rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 2.5rem; }
     section .section-title span {
       font-size: 0.75rem; }
   section .section-readmore {
@@ -59,6 +59,47 @@ section {
     font-size: 1.25rem;
     margin-top: 3.000rem;
     padding: 3px 27px 3px 27px; }
+
+.carousel-messege {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 70%;
+  width: 70%;
+  top: 15%;
+  left: 15%;
+  padding: 49px 77px 82px 106px; }
+  .carousel-messege:before {
+    width: 106px;
+    height: 0px;
+    border-top: 106px solid orange;
+    border-left: 106px solid orange; }
+  .carousel-messege .carousel-left {
+    float: left;
+    margin-right: 38px; }
+    .carousel-messege .carousel-left img {
+      margin-bottom: 13px; }
+    .carousel-messege .carousel-left button {
+      background-color: #ec6941;
+      width: 105px;
+      height: 32px; }
+  .carousel-messege .carousel-right {
+    float: left; }
+    .carousel-messege .carousel-right .title-1 {
+      font-size: 1.875rem;
+      margin-bottom: 0rem; }
+    .carousel-messege .carousel-right .title-2 {
+      font-size: 3.375rem;
+      margin-bottom: 0rem; }
+    .carousel-messege .carousel-right .title-3 {
+      font-size: 1.5rem;
+      margin-bottom: 29px; }
+    .carousel-messege .carousel-right .text-1 {
+      font-size: 0.75rem;
+      max-width: 294px; }
+    .carousel-messege .carousel-right .readmore {
+      font-size: 1rem;
+      color: #ec6941; }
 
 .home-member-block {
   margin: 0 auto; }
@@ -98,7 +139,8 @@ section {
   font-size: 0.875rem; }
 
 .join-form .necessary:after {
-  text-overflow: ellipsis; }
+  content: ' *';
+  color: red; }
 .join-form .subform {
   background-color: #f8f8f8;
   padding: 3rem 7.25rem 3rem 7.25rem;
@@ -115,6 +157,17 @@ section {
 .members-block .subtitle {
   font-size: 1.5rem;
   color: #bdbdbd; }
+.members-block .post-block {
+  text-align: center;
+  line-height: 0rem;
+  padding: 2rem 0; }
+  .members-block .post-block .post-title {
+    color: #ec6941;
+    font-size: 1.25rem;
+    padding: 0 2rem;
+    background-color: white; }
+  .members-block .post-block .post-hr {
+    border-bottom: 1px solid #464646; }
 .members-block .member {
   text-align: center; }
   .members-block .member .member-avatar {

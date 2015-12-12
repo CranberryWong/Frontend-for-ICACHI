@@ -24,7 +24,7 @@ body {
 
 // Section
 section {
-	margin-bottom:72px;
+	margin-bottom: 3rem;
 	
 	p{
 		line-height: 2rem;
@@ -33,7 +33,7 @@ section {
 	.section-title {
 		border-left: 10px solid $orange-dominant;
 		padding-left: 1rem;
-		margin-bottom: 3rem;
+		margin-bottom: 2.5rem;
 		
 		span {
 			font-size: $fontSize-light;
@@ -50,6 +50,69 @@ section {
 	
 }
 
+// Home > Carousel
+
+.carousel-messege {
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 70%;
+	width: 70%;
+	top: 15%;
+	left: 15%;
+	padding: 49px 77px 82px 106px;
+	
+	&:before {
+		width: 106px;
+		height: 0px;
+		border-top: 106px solid orange;
+		border-left: 106px solid orange;		
+	}
+	
+	.carousel-left {
+		float:left;
+		margin-right: 38px;
+		
+		img {
+			margin-bottom: 13px;
+		}
+		button {
+			background-color: $orange-dominant;
+			width: 105px;
+			height: 32px;
+		}		
+	}
+	
+	.carousel-right {
+		float:left;
+		
+		.title-1 {
+			font-size: $fontSize-bold;
+			margin-bottom: 0rem;
+		}
+		
+		.title-2 {
+			font-size: 3.375rem;
+			margin-bottom: 0rem;
+		}
+		
+		.title-3 {
+			font-size: $fontSize-large;
+			margin-bottom: 29px;
+		} 
+		
+		.text-1 {
+			font-size: $fontSize-light;
+			max-width: 294px;
+		}
+		
+		.readmore {
+			font-size: $fontSize-middle;
+			color: $orange-dominant;
+		}		
+	}
+}
+  
 // Home > Member
 .home-member-block {
 	margin: 0 auto;
@@ -116,8 +179,12 @@ section {
  
 // Join us
 .join-form {
-	.necessary:after {
-		text-overflow: ellipsis;	
+	.necessary {
+		
+		&:after {
+			content: ' *';
+			color: red;		
+		}	
 	}
 	
 	.subform {
@@ -144,6 +211,24 @@ section {
 		font-size: $fontSize-large;
 		color: $grey-subtitle;
 	}
+	
+	.post-block {
+		text-align: center;
+		line-height: 0rem;
+		padding: 2rem 0;
+		
+		.post-title {
+			color: $orange-dominant;
+			font-size: $fontSize-normal;
+			padding: 0 2rem;
+			background-color: white;
+		}
+		
+		.post-hr {
+			border-bottom: 1px solid $black-text;
+		}
+	}
+
 	
 	.member {
 		text-align: center;
